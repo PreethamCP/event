@@ -1,0 +1,204 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+section {
+  max-width: 100%;
+  min-height: 100vh;
+}
+/* .mainscreen {
+  background-image: url(mainscreen.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+footer {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+footer > ul > li {
+  margin: 10px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+hr {
+  width: 200px;
+}
+
+/* header {
+  background-color: rgb(15, 15, 15);
+} */
+.logo {
+  background-image: url(logo.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.navbar {
+  max-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+.nav-braniding {
+  font-size: 2rem;
+}
+.nav-link {
+  transition: 0.7s ease;
+}
+.nav-link:hover {
+  color: rgb(90, 1, 233);
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+.nav-logo {
+  font-size: 25px;
+  font-style: italic;
+  font-weight: bold;
+  color: black;
+}
+section > p > a {
+  color: rgb(19, 68, 226);
+}
+.history {
+  background-image: url(background1.png);
+  background-size: cover;
+  background-position: center;
+}
+.achivements {
+  background-image: url(background1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.teamLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+body > .mainscreen > header > .navbar > .teamLogo > li {
+  padding: 10px;
+}
+/* section {
+  background-color: rgb(27, 25, 25);
+  color: antiquewhite;
+} */
+footer > ul {
+  display: flex;
+  flex-direction: row;
+}
+footer > ul > li {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+header>.nav-menu>.nav-item>.nav-link{
+  color: white;
+}
+/* .achivements {
+  background-color: rgb(46, 44, 44);
+  background-image: url(achivementimg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.history {
+  background-color: rgb(46, 44, 44);
+  background-image: url(achivementimg.jpg);
+  background-size: cover;
+  background-position: center;
+} */
+body{
+  background-image: url(mainscreen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed
+}
+::-webkit-scrollbar {
+  width: 0.3rem;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(15, 15, 17);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(10, 10, 10);
+  border-radius: 0.15rem;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgb(8, 6, 6);
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+  .nav-item {
+    margin: 16px 0;
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+  .logo {
+    background-image: url(logo.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0;
+  }
+}
+

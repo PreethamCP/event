@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- SLIDESHOW -->
+    <link rel="stylesheet" href="mainslide.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <!-- style.css -->
+    <link rel="stylesheet" href="background_styles.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <title>COSMOS</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon" />
+  </head>
+  <body>
+    <section class="mainscreen">
+      <header>
+        <nav class="navbar">
+          <ul class="teamLogo">
+            <li><div class="logo"></div></li>
+            <li>
+              <a href="#" class="nav-branding nav-link nav-logo">
+                COSMOS
+              </a>
+            </li>
+          </ul>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="history.html" class="nav-link">HISTORY </a>
+            </li>
+            <li class="nav-item">
+              <a href="achievement" class="nav-link">ACHIVEMENTS </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">CONTACT</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <div class="slide">
+        <div class="scroll-bar"></div>
+        <div class="container4 main1">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="img1.jpg" /></div>
+              <div class="swiper-slide"><img src="img2.jpg" /></div>
+              <div class="swiper-slide"><img src="img3.jpg" /></div>
+              <div class="swiper-slide"><img src="img5.jpg" /></div>
+              <div class="swiper-slide"><img src="img6.jpg" /></div>
+              <div class="swiper-slide"><img src="img4.jpg" /></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="contact" id="contact">
+      <h2>CONTACT INFO</h2>
+      <hr />
+      <br />
+      <p>TEAM W10</p>
+      <ul>
+        <li>
+          Aditya Raj
+          <hr style="width: 70px" />
+          Institution : Sir M VIT<br />
+          Branch : ECE<br />
+          Sem:2nd<br />
+          Github link:
+        </li>
+        <li>
+          Alok Kumar Gupta
+          <hr style="width: 130px" />
+          Institution : Sir M VIT<br />
+          Branch : ECE<br />
+          Sem:2nd<br />
+          Github link:<a href="https://github.com/alk231"
+            >https://github.com/alk231</a
+          >
+        </li>
+        <li>
+          C Preetham
+          <hr style="width: 90px" />
+          Institution : Sir M VIT<br />
+          Branch : ECE<br />
+          Sem:2nd<br />
+          Github link:
+          <a href="https://github.com/PreethamCP">
+            https://github.com/PreethamCP</a
+          >
+        </li>
+      </ul>
+    </footer>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      loop: true,
+
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</html>
